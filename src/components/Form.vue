@@ -67,7 +67,7 @@
                 <div class="  row mb-3">
                     <label for="assets" class="col-sm-3 col-form-label text-success">Assets :</label>
                     <div class="col-sm-8">
-                        <input type="text" class="form-control" id="assets" v-model="assets" v-on:change="getNetWorth" required>
+                        <input type="number" class="form-control" id="assets" v-model="assets" v-on:change="getNetWorth" required>
                     </div>
                 </div>
             </div>
