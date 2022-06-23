@@ -1,11 +1,12 @@
-import { createRouter, createWebHashHistory } from "vue-router";
+import { createRouter, createWebHistory } from "vue-router";
 
 import Home from "../components/Home";
 import Form from "../components/Form";
 import Investment from "../components/Investment";
 
 const router = createRouter({
-  history: createWebHashHistory(),
+  // mode: "hash",
+  history: createWebHistory(process.env.BASE_URL),
   routes: [
     {
       path: "/",
