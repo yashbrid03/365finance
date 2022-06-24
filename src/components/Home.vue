@@ -96,6 +96,9 @@ export default{
     font-size: 1rem;
     text-align:justify ;
 }
+.heading{
+    font-size: 2.8rem;
+  }
 }
 
 </style>

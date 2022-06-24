@@ -42,4 +42,13 @@ export default {
 .color{
     color: #3acc21;
 }
+@media screen and (max-width: 500px){
+  .heading{
+    font-size: 2.8rem;
+  }
+  .display-5{
+    font-size: 1rem;
+    text-align:justify ;
+}
+}
 </style>
