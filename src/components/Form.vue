@@ -85,7 +85,7 @@
                 (Assets means things that you own, like money invested in stocks or houses that you own. Make sure that you calculate the value that you will get for the item when selling it.<br>
                 Liabilities means debts, like student loan, credit card debt and anything that you owe)
             </h6>
-            <h1 class="display-6 pt-3" >You’r Net Worth : <b class="text-success" v-if="netWorth > 0" >{{netWorth}} &#8377;</b> <b class="text-danger" v-if="netWorth < 0" >{{netWorth}} &#8377;</b> </h1>
+            <h1 class="display-6 pt-3" >You’r Net Worth : <b class="text-success" v-if="netWorth >= 0" >{{netWorth.toLocaleString()}} &#8377;</b> <b class="text-danger" v-if="netWorth < 0" >{{netWorth.toLocaleString()}} &#8377;</b> </h1>
         </div>
         <div class="pt-2">
             <h6 class="display-5 text-justify"><b>(It is normal to have negative net worth for people starting their journey to finance.
@@ -95,7 +95,7 @@
         <!-- Get Investment Plan -->
         <h1 class="heading pt-5"><b>Get Investment Plan</b> </h1>
         <div class="pt-3">
-            <h1 class="display-6">Goal Amount in today's value : &#8377; {{todayValue}}</h1>
+            <h1 class="display-6">Goal Amount in today's value : &#8377; {{todayValue.toLocaleString()}}</h1>
             
         </div>
         <form class="row g-3 pt-4 h5" @submit.prevent="getPlan">
