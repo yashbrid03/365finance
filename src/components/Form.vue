@@ -258,4 +258,12 @@ function getPlan(){
 .heading{
       font-size: 3.5rem;
 }
+
+@media screen and (max-width: 500px){
+  
+  .display-5{
+    font-size: 1rem;
+    text-align:justify ;
+}
+}
 </style>

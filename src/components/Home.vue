@@ -92,6 +92,10 @@ export default{
   .pclogo{
     display: none;
   }
+  .display-5{
+    font-size: 1rem;
+    text-align:justify ;
+}
 }
 
 </style>
