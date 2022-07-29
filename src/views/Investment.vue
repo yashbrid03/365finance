@@ -1,4 +1,5 @@
 <template>
+    <Nav />
     <div class="container-sm px-5  py-5">
         <h1 class="heading"><b>What is Investment</b> </h1>
         <div class="pt-3">
@@ -26,10 +27,9 @@
     </div>
 </template>
 
-<script>
-export default {
+<script setup>
+import Nav from '../components/Nav.vue'
 
-}
 </script>
 
 <style>

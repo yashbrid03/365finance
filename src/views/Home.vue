@@ -1,7 +1,7 @@
 <template>
+<Nav />
 <div class="container-sm px-5  py-5 ">
   <div class="text-center mb-5 pb-4">
-    
     <svg id="logo" fill="none"  width="500" class="pt-5 pclogo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 489.96 375.87" >
       <g id="Layer_2" data-name="Layer 2">
         <g id="Layer_1-2" data-name="Layer 1">
@@ -38,18 +38,11 @@
 </template>
 
 <script >
+import Nav from '../components/Nav.vue'
+
 export default{
-  el :'#logo',
-  mounted(){
-    var logo = this.$el.querySelectorAll('path')
-    for (let i = 0; i< logo.length; i++){
-      console.log(logo[i].getTotalLength())
-    }
-  }
+  components:{Nav},  
 }
-
-
-
 </script>
 
 <style>
@@ -61,7 +54,6 @@ export default{
 }
 
 .mblogo {
-  /* visibility: hidden; */
   display: none;
 }
 

@@ -1,4 +1,5 @@
 <template>
+<Nav />
     <div class="container-sm px-5  py-5">
         <h1 class="heading"><b>Basic Details</b> </h1>
         <!-- basic details Form -->
@@ -172,6 +173,7 @@
 </template>
 
 <script setup>
+import Nav from '../components/Nav.vue'
 import {ref} from 'vue'
 
 const DOB = ref('')
