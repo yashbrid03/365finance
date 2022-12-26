@@ -42,6 +42,11 @@
                         <a class="nav-link text-dark" href="#"><b>Signup</b></a>
                     </router-link>
                 </li>
+                <li class="nav-item active" v-if="!user">
+                    <router-link class="nav-link" to="/login">
+                        <a class="nav-link text-dark" href="#"><b>Login</b></a>
+                    </router-link>
+                </li>
                 <li class="nav-item active" v-if="user">
                     <span class="nav-link" >
                         <span class="nav-link text-dark"><b>Logged in as {{ user.displayName }}</b></span>
