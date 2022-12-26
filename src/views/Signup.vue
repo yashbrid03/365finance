@@ -83,7 +83,7 @@ export default {
         error.value = err.message
       }
     }
-    return { handleSubmit, email, password, error, name }
+    return { handleSubmit, email, password, confirmpassword, error, name }
   }, 
 }
 </script>
